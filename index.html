@@ -1,13 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Page Title</title>
-    </head>
-    <body>
-        <h1>This page is about cars.</h1>
-        <p>Something that I find to be <strong>interesting</strong> is <a href="https://www.google.com/search?q=cars+the+movie&rlz=1C1RXQR_enUS1148US1148&oq=cars+the+movie&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyCggBEC4YsQMYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQgyMTkxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8">cars.</a></p>
-        <p>I'm kidding, although that is a great movie, I like <strong>real</strong> <a href="https://www.youtube.com/watch?v=p_kLZf5zQvg">cars</a> more.</p>
-        <a href="https://lh3.googleusercontent.com/proxy/rIDX9Pt66RPmFi-lk3LSJkWHzMJaXH1jm5Lqzp8A3B3NCPp6GX4GYXWzeKxF9kTv-ZjGRweujOBEZYmRmiDTwlddYWjlWvbyheIAlcbdRyV3RAhwj5Pgti3HIwLXWSXsjGA9CDp5rAXjZEaYQU_cVNoH5u4c"><img src="https://i.ytimg.com/vi/p_kLZf5zQvg/maxresdefault.jpg" alt="997 Turbo" width="500"/></a>
-        <p>Real car pictured above; don't click on it</p>
-    </body>
-</html> 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <script>
+      // Restore the URL forwarded by GitHub Pages before React Router starts.
+      const route = new URLSearchParams(window.location.search).get('__spa');
+      if (route && route.startsWith('/')) {
+        const target = new URL(route, window.location.origin);
+        if (target.origin === window.location.origin) {
+          window.history.replaceState(null, '', target.pathname + target.search + target.hash);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

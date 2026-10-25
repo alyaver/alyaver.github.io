@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting</title>
+    <script>
+      // Custom domains serve the app at /; Vite copies this file into dist.
+      const route = window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace('/?__spa=' + encodeURIComponent(route));
+    </script>
+  </head>
+  <body>
+    <p>Returning to the portfolio. <a href="/">Go to Home</a>.</p>
+  </body>
+</html>
