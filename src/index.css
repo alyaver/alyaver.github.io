@@ -8,10 +8,8 @@
 * { box-sizing: border-box; }
 body { margin: 0; }
 #root { min-height: 100vh; display: flex; flex-direction: column; }
-header, main, footer { width: 100%; max-width: 960px; margin-inline: auto; padding: 1rem; }
+main, footer { width: 100%; max-width: 960px; margin-inline: auto; padding: 1rem; }
 main { flex: 1; }
-nav { display: flex; gap: 1rem; }
 a { color: #2456a6; }
-nav a.active { font-weight: bold; }
 .project-card { padding: 1rem; border: 1px solid #ddd; }
 .project-card h2 { margin: 0; }
