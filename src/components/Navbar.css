@@ -19,6 +19,7 @@
   align-items: center;
   min-height: 32px;
   color: #1d1d1f;
+  text-decoration: none;
 }
 
 .navbar__logo {
@@ -37,11 +38,40 @@
 .navbar__links {
   display: flex;
   align-items: center;
+  gap: 1.5rem;
   min-height: 32px;
+  white-space: nowrap;
+}
+
+.navbar__link {
+  color: #6e6e73;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.navbar__link:hover {
+  color: #1d1d1f;
+}
+
+.navbar__link.active {
+  color: #1d1d1f;
+  font-weight: 500;
+}
+
+.navbar__link--placeholder {
+  cursor: default;
+  color: #9a9a9f;
 }
 
 @media (max-width: 480px) {
   .navbar__content {
     width: min(100% - 1.5rem, 1100px);
+  }
+
+  .navbar__links {
+    gap: 1rem;
   }
 }

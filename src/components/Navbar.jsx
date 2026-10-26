@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 import './Navbar.css';
 
@@ -8,7 +9,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar__content">
-        <div className="navbar__brand" aria-label="AL.">
+        <Link className="navbar__brand" to="/" aria-label="AL. home">
           {hasLogoError ? (
             <span className="navbar__logo-fallback">AL.</span>
           ) : (
@@ -19,8 +20,22 @@ export default function Navbar() {
               onError={() => setHasLogoError(true)}
             />
           )}
-        </div>
-        <div className="navbar__links" aria-label="Main navigation" />
+        </Link>
+        <nav className="navbar__links" aria-label="Main navigation">
+          <NavLink className="navbar__link" to="/projects">
+            Projects
+          </NavLink>
+          <NavLink className="navbar__link" to="/about">
+            About
+          </NavLink>
+          <span
+            className="navbar__link navbar__link--placeholder"
+            aria-disabled="true"
+            title="Resume coming soon"
+          >
+            Resume
+          </span>
+        </nav>
       </div>
     </header>
   );
