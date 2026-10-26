@@ -25,9 +25,6 @@ export default function Navbar() {
           <NavLink className="navbar__link" to="/projects">
             Projects
           </NavLink>
-          <NavLink className="navbar__link" to="/about">
-            About
-          </NavLink>
           <span
             className="navbar__link navbar__link--placeholder"
             aria-disabled="true"
