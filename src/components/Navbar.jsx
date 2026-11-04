@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './Navbar.css';
 
@@ -21,18 +21,6 @@ export default function Navbar() {
             />
           )}
         </Link>
-        <nav className="navbar__links" aria-label="Main navigation">
-          <NavLink className="navbar__link" to="/projects">
-            Projects
-          </NavLink>
-          <span
-            className="navbar__link navbar__link--placeholder"
-            aria-disabled="true"
-            title="Resume coming soon"
-          >
-            Resume
-          </span>
-        </nav>
       </div>
     </header>
   );
